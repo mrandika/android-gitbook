@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/repoName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Repo Name" />
+
+    <TextView
+        android:id="@+id/userName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="@+id/repoName_textView"
+        app:layout_constraintTop_toBottomOf="@+id/repoName_textView"
+        tools:text="Owner Username" />
+
+    <TextView
+        android:id="@+id/description_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/userName_textView"
+        app:layout_constraintTop_toBottomOf="@+id/userName_textView"
+        tools:text="Repo Description" />
+
+    <ImageView
+        android:id="@+id/watcher_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/description_textView"
+        app:layout_constraintTop_toBottomOf="@+id/description_textView"
+        app:srcCompat="@drawable/ic_twotone_eye_24" />
+
+    <TextView
+        android:id="@+id/watcher_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/watcher_imageView"
+        app:layout_constraintStart_toEndOf="@+id/watcher_imageView"
+        app:layout_constraintTop_toTopOf="@+id/watcher_imageView"
+        tools:text="Repo Watcher" />
+
+    <ImageView
+        android:id="@+id/language_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/watcher_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/watcher_imageView"
+        app:srcCompat="@drawable/ic_twotone_code_24" />
+
+    <TextView
+        android:id="@+id/language_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/language_imageView"
+        app:layout_constraintStart_toEndOf="@+id/language_imageView"
+        app:layout_constraintTop_toTopOf="@+id/language_imageView"
+        tools:text="Repo Language" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/user_imageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userName_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/repoName_textView"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+        app:srcCompat="@mipmap/ic_launcher" />
+</androidx.constraintlayout.widget.ConstraintLayout>

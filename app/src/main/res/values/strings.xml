@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Gitbook</string>
+
+    <!-- Bottom Navigation Item -->
+    <string name="users">Users</string>
+    <string name="repositories">Repositories</string>
+    <string name="favorites">Favorites</string>
+    <string name="account">Account</string>
+
+    <!-- Title -->
+    <string name="detail_user">User Detail</string>
+    <string name="detail_repo">Repository Detail</string>
+    <string name="following">Following</string>
+    <string name="follower">Follower</string>
+
+    <!-- Appbar Item -->
+    <string name="setting">Setting</string>
+
+    <!-- State -->
+    <string name="error">There\'s a problem while loading the data</string>
+    <string name="empty">No data available</string>
+
+    <!-- Hint -->
+    <string name="search_hint">Search</string>
+    <string name="user_search_hint">Search username</string>
+    <string name="repo_search_hint">Search repository</string>
+
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+
+    <string name="theme">Theme</string>
+    <string name="theme_description">Customize how Gitbook looks</string>
+
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_default">System default</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/location_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/user_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/user_imageView"
+        app:srcCompat="@drawable/ic_twotone_location_on_24" />
+
+    <TextView
+        android:id="@+id/location_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/location_imageView"
+        app:layout_constraintStart_toEndOf="@+id/location_imageView"
+        app:layout_constraintTop_toTopOf="@+id/location_imageView"
+        tools:text="User Location" />
+
+    <ImageView
+        android:id="@+id/email_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/location_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/location_imageView"
+        app:srcCompat="@drawable/ic_twotone_mail_24" />
+
+    <TextView
+        android:id="@+id/email_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/email_imageView"
+        app:layout_constraintStart_toEndOf="@+id/email_imageView"
+        app:layout_constraintTop_toTopOf="@+id/email_imageView"
+        tools:text="User Email" />
+
+    <ImageView
+        android:id="@+id/repo_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/location_imageView"
+        app:layout_constraintStart_toEndOf="@+id/location_textView"
+        app:layout_constraintTop_toTopOf="@+id/location_imageView"
+        app:srcCompat="@drawable/ic_twotone_code_24" />
+
+    <TextView
+        android:id="@+id/repo_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repo_imageView"
+        app:layout_constraintStart_toEndOf="@+id/repo_imageView"
+        app:layout_constraintTop_toTopOf="@+id/repo_imageView"
+        tools:text="Repo Count" />
+
+    <ImageView
+        android:id="@+id/connection_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/email_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/email_imageView"
+        app:srcCompat="@drawable/ic_twotone_people_24" />
+
+    <TextView
+        android:id="@+id/connection_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/connection_imageView"
+        app:layout_constraintStart_toEndOf="@+id/connection_imageView"
+        app:layout_constraintTop_toTopOf="@+id/connection_imageView"
+        tools:text="x Followers, y Following" />
+</androidx.constraintlayout.widget.ConstraintLayout>
